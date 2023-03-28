@@ -67,7 +67,7 @@ a {
 }
 
 :root {
-  --bg-itnro: url(../../../assets/img/first-screen-image.jpg);
+  --bg-itnro: url(../../assets/img/first-screen-image.jpg);
   --c-white-text: #FFFFFF;
   --c-bg: #FFFFFF;
   --c-text-main: #262A3F;
@@ -82,7 +82,7 @@ a {
 }
 
 .--dark-theme {
-  --bg-itnro: url(../../../assets/img/first-screen-image2.jpg);
+  --bg-itnro: url(../../assets/img/first-screen-image2.jpg);
   --c-bg: #161926;
   --c-text-main: #FFFFFF;
   --c-header-underline: #53F3CD;
@@ -509,10 +509,10 @@ body.--open {
   width: 100%;
   height: 80px;
   bottom: 0px;
-  background: url(../../../assets/img/gradient_img.png);
+  background: url(../../assets/img/gradient_img.png);
 }
 .start-bg.--dark::before {
-  background: url(../../../assets/img/gradient_img2.png);
+  background: url(../../assets/img/gradient_img2.png);
 }
 
 .--section {

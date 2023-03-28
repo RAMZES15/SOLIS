@@ -14,12 +14,12 @@
         width: 100%;
         height: 80px;
         bottom: 0px;
-        background: url(../../../assets/img/gradient_img.png);
+        background: url(../../assets/img/gradient_img.png);
     }
 
     &.--dark {
         &::before {
-            background: url(../../../assets/img/gradient_img2.png);
+            background: url(../../assets/img/gradient_img2.png);
         }
     }
 }
