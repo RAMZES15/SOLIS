@@ -1,0 +1,28 @@
+:root {
+    --bg-itnro: url(../../../assets/img/first-screen-image.jpg);
+    --c-white-text: #FFFFFF;
+    --c-bg: #FFFFFF;
+    --c-text-main: #262A3F;
+    --c-header-underline: #f0d3d0;
+    --c-btn-text: #F1897B;
+    --c-btn-bg: #f1897b4d;
+    --c-hover-btn-text: #E54F3A;
+    --c-hover-btn-bg: #e54e3a4d;
+    --c-special-text: #85BBB1;
+    --c-border: #E4E4E4;
+    --header-bg: linear-gradient(270deg, rgba(22, 25, 38, 0.5) 0%, rgba(22, 25, 38, 0) 24.1%, rgba(22, 25, 38, 0) 47.19%), rgba(22, 25, 38, 0.02);
+}
+
+.--dark-theme {
+    --bg-itnro: url(../../../assets/img/first-screen-image2.jpg);
+    --c-bg: #161926;
+    --c-text-main: #FFFFFF;
+    --c-header-underline: #53F3CD;
+    --c-btn-text: #53F3CD;
+    --c-btn-bg: #ccfcf04d;
+    --c-hover-btn-text: #02e0ab;
+    --c-hover-btn-bg: #02e0ac4d;
+    --c-special-text: #689FF2;
+    --c-border: #515773;
+    --header-bg: linear-gradient(270deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.244636) 24.1%, rgba(255, 255, 255, 0) 47.19%), rgba(255, 255, 255, 0.02);
+}

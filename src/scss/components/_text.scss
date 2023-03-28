@@ -1,0 +1,24 @@
+.--title {
+    font-family: 'Playfair Display';
+    font-weight: 400;
+    font-size: $fs-40;
+    line-height: 48px;
+    color: var(--c-text-main);
+}
+
+.--green-text {
+    font-family: 'Playfair Display';
+    font-style: italic;
+    font-weight: 400;
+    font-size: $fs-40;
+    line-height: 48px;
+    color: var(--c-special-text);
+}
+
+.--paragraph {
+    font-family: 'Lato';
+    font-weight: 300;
+    font-size: $fs-18;
+    line-height: 26px;
+    color: var(--c-text-main);
+}

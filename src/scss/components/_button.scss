@@ -1,0 +1,94 @@
+.btn {
+	letter-spacing: 2px;
+	display: inline-block;
+	font-family: 'Lato';
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 20px;
+	text-decoration: none;
+	color: var(--c-btn-text);
+	border: none;
+	background-color: #0000;
+	position: relative;
+	text-transform: uppercase;
+	transition: color 0.5s, transform 0.7s, border 0.5s;
+	cursor: pointer;
+
+	&::after {
+		content: '';
+		position: absolute;
+		width: 95%;
+		height: 70%;
+		background-color: var(--c-btn-bg);
+		left: 9px;
+		bottom: -4px;
+		z-index: -1;
+		transition: background-color 0.5s
+	}
+
+	&:hover {
+		color: var(--c-hover-btn-text);
+		transform: scale(1.05);
+
+		&::after {
+			background-color: var(--c-hover-btn-bg);
+		}
+	}
+
+	&.--border {
+		padding: 33px 89px 37px 89px;
+		max-width: 300px;
+		max-height: 90px;
+		border: 1px solid var(--c-border);
+
+		&:hover {
+			border: 1px solid var(--c-hover-btn-text);
+		}
+
+		&::after {
+			width: 112px;
+			height: 14px;
+			left: calc(50% - 50px);
+			bottom: calc(50% - 12px);
+		}
+	}
+}
+
+
+.themes-btn {
+	@include breakpoint('xl') {
+		margin-left: auto;
+	}
+	background-color: #0000;
+	border: none;
+	transition: all 0.5s;
+	cursor: pointer;
+	&__switch {
+		width: 45px;
+		height: 45px;
+	}
+
+	& .sun {
+		transform: scale(1.3) translateX(-85px) translateY(-55px);
+		transition: all 0.5s;
+	}
+
+	& .moon {
+		transform: scale(1) translateX(0) translateY(0);
+		transition: all 0.5s;
+	}
+
+	&.--dark {
+		& path {
+			transition: all 0.5s;
+			fill: white;
+		}
+		& .sun {
+			transform: scale(1) translateX(0) translateY(0);
+			transition: all 0.5s;
+		}
+		& .moon {
+			transform: scale(1.3) translateX(-60px) translateY(-55px);
+		}
+	}
+}

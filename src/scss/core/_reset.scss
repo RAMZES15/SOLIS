@@ -2,6 +2,12 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	transition: color 0.5s, background 0.5s, fill 0.5s, stop-color 0.5s, stroke 0.5s;
+}
+
+body {
+	transition: background-color 0.5s;
+	background-color: var(--c-bg);
 }
 
 img {

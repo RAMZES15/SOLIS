@@ -1,0 +1,97 @@
+.hamburger {
+    display: none;
+    margin-left: 15px;
+    position: relative;
+    width: 40px;
+    height: 25px;
+    
+    @include breakpoint('lg') {
+        display: inline-block;
+    }  
+    & > span {
+        transition: all 0.5s;
+        position: absolute;
+        display: inline-block;
+        height: 2px;
+        width: 100%;
+        background-color: var(--c-text-main);
+        &:nth-child(1) {
+            top: 0;
+        }
+        &:nth-child(2) {
+            top: calc(50% - 1px);
+        }
+        &:nth-child(3) {
+            top: calc(100% - 2px);
+        }
+    }
+    &.--open {
+        & > span {
+            &:nth-child(1) {
+                transform: rotateZ(35deg) translateY(10px) translateX(6px);
+                top: 0;
+            }
+            &:nth-child(2) {
+                top: calc(50% - 1px);
+                transform: translateX(-10px);
+                opacity: 0;
+            }
+            &:nth-child(3) {
+                transform: rotateZ(-35deg) translateY(-10px) translateX(6px);
+                top: calc(100% - 2px);
+            }
+        }
+    }
+}
+
+.overlay {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backdrop-filter: blur(8px);
+    z-index: 9;
+    position: fixed;
+    visibility: hidden;
+    &.--open {
+        visibility: visible;
+    }
+}
+
+body {
+    &.--open {
+		overflow: hidden;
+	}
+}
+
+.close {
+    display: none;
+    @include breakpoint('lg') {
+        display: inline-block;
+    }
+    top: 55px;
+    right: 25px;
+    width: 40px;
+    height: 25px;
+    position: absolute;
+    border: unset;
+    background: unset;
+    & > span {
+        top: 0;
+        left: 0;
+        position: absolute;
+        display: inline-block;
+        background-color: var(--c-text-main);
+        height: 2px;
+        width: 100%;
+        &:nth-child(1) {
+            top: 0;
+            transform: rotateZ(35deg) translateY(10px) translateX(6px);
+        }
+        &:nth-child(2) {
+            top: calc(100% - 2px);
+            transform: rotateZ(-35deg) translateY(-10px) translateX(6px);
+        }
+    }
+}
