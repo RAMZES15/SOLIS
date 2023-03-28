@@ -502,6 +502,11 @@ body.--open {
   background: var(--bg-itnro) no-repeat center;
   background-size: cover;
 }
+@media screen and (max-width: calc(768px - 1px)) {
+  .start-bg {
+    background: var(--bg-itnro) no-repeat left top;
+  }
+}
 .start-bg::before {
   transition: background 0.5s;
   position: absolute;

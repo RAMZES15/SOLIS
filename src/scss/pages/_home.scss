@@ -6,7 +6,9 @@
     z-index: -1;
     background: var(--bg-itnro) no-repeat center;
     background-size: cover;
-
+    @include breakpoint('md') {
+        background: var(--bg-itnro) no-repeat left top;
+    }
     &::before {
         transition: background 0.5s;
         position: absolute;
